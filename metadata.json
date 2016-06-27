@@ -2,7 +2,7 @@
     "name" : "Hello World Plugin",
     "slug" : "hello-world-plugin",
     "download_url" : "https://github.com/koolshyguy/Hello-World-Plugin.git",
-    "version" : "0.2",
+    "version" : "0.1",
     "author" : "Vishal",
     "sections" : {
         "description" : "Plugin description here. Basic HTML allowed."
