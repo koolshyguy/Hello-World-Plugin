@@ -1,7 +1,7 @@
 {
     "name" : "Hello World Plugin",
     "slug" : "hello-world-plugin",
-    "download_url" : "https://github.com/koolshyguy/Hello-World-Plugin.git",
+    "download_url" : "https://github.com/koolshyguy/Hello-World-Plugin/archive/v1.zip",
     "version" : "0.1",
     "author" : "Vishal",
     "sections" : {
