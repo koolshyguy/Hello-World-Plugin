@@ -7,15 +7,13 @@ Version: 0.2
 */
 class abc{
      function __construct() {
-        require_once( 'class-wp-license-manager-client.php' );
         require(plugin_dir_path( __FILE__ ) .'../plugin-update-checker/plugin-update-checker.php');
-        $MyUpdateChecker = PucFactory::buildUpdateChecker(
-            'https://github.com/koolshyguy/Hello-World-Plugin/blob/master/metadata.json',
-            __FILE__,
-            'master'
+        $MyUpdateChecker = new PluginUpdateChecker_3_1(
+            'http://localhost/metadata/metadata.json',
+            __FILE__
         );
         if ( is_admin() ) {
-            $license_manager = new Wp_License_Manager_Client(
+            /*$license_manager = new Wp_License_Manager_Client(
                'hello-world-plugin',
                 'Hello World Plugin',
                 'hello-world-plugin-text',
@@ -23,7 +21,7 @@ class abc{
                 'plugin',
                 __FILE__
             );
-            $this->license_manager = $license_manager;
+            $this->license_manager = $license_manager;*/
         }
     
         //add_filter( 'pre_set_site_transient_update_plugins', array( $this, 'check_for_update' ) );
