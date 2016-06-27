@@ -3,7 +3,7 @@
 Plugin Name: Hello World Plugin
 Author: Vishal 
 Description: A test plugin that says Hello.
-Version: 0.2
+Version: 1.0
 */
 class abc{
      function __construct() {
